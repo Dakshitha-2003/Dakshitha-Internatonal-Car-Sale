@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoDrive Motors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1619856635401-8479e5f9b8b0') center/cover no-repeat;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .container {
+      padding: 40px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+    }
+    .vehicles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .vehicle-card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .vehicle-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .vehicle-card .info {
+      padding: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #1c1c1c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AutoDrive Motors</h1>
+    <p>Your Trusted Vehicle Dealership</p>
+  </header>
+
+  <nav>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <div>Find Your Dream Car Today!</div>
+  </div>
+
+  <div class="container" id="vehicles">
+    <h2 class="section-title">Featured Vehicles</h2>
+    <div class="vehicles">
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/280x180?text=Sedan+2023" alt="Sedan">
+        <div class="info">
+          <h3>2023 Sedan LX</h3>
+          <p>$25,000 · Automatic · Petrol</p>
+        </div>
+      </div>
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/280x180?text=SUV+2022" alt="SUV">
+        <div class="info">
+          <h3>2022 SUV XDrive</h3>
+          <p>$35,000 · AWD · Diesel</p>
+        </div>
+      </div>
+      <div class="vehicle-card">
+        <img src="https://via.placeholder.com/280x180?text=Pickup+Truck" alt="Pickup">
+        <div class="info">
+          <h3>2024 Pickup Pro</h3>
+          <p>$40,000 · Manual · Petrol</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <ul>
+      <li>New & Used Vehicle Sales</li>
+      <li>Vehicle Financing & Leasing</li>
+      <li>Vehicle Trade-in & Exchange</li>
+      <li>Repair & Maintenance Services</li>
+    </ul>
+  </div>
+
+  <div class="container" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>AutoDrive Motors is a leading vehicle dealership offering top-notch new and used vehicles. Our mission is to help you find the best car to suit your lifestyle and budget. With decades of experience and exceptional customer service, we ensure a smooth and transparent buying process.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 AutoDrive Motors. All rights reserved.
+  </footer>
+
+</body>
+</html>
